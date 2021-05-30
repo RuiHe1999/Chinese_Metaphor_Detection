@@ -3,7 +3,7 @@
 Data and codes for my master thesis (TFM). The core model is a BiLSTM + CRF recurrent neural network using (concatenated) pretrained word embeddings as the feature. 
 
 ## Table of Contents
-- [folder intro] (#Basics)
+- [folder intro](#Basics)
 - [Data](#data)
 - [Embeddings](#embeddings)
 
