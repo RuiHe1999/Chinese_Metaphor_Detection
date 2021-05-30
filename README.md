@@ -31,10 +31,10 @@ All Datasets are endcoded with UTF-8. The datasets we shared here are not origin
 | BIO_seq                 | BIO tag sequence          | trinary, B for begining of metaphor, I for inside metaphor and O for outside metaphor (i.e. literal) |
 | split                   | subset label              | trinary, train/test/val                  |
 
-## VUA
+### VUA
 VUA dataset is an English metaphor dataset obtained from [Shared Task on Metaphor Detection](<https://github.com/EducationalTestingService/metaphor/tree/master/VUA-shared-task>). 
 
-## PSUCMC
+### PSUCMC
 The PSU Chinese Metaphor Corpus is published by Dr. Xiaofei Lu on his [personal webset](<http://www.personal.psu.edu/xxl13/downloads/cmc.html>).
 
 There are some errors in the original corpus which we fixed them manually
