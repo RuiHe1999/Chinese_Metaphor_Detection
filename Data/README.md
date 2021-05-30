@@ -12,9 +12,9 @@ All Datasets are endcoded with UTF-8. The datasets we shared here are not origin
 | pos_seq                 | POS tag sequence          |                                          |
 | metaphor_seq            | metaphor label sequence   | binary, 0 for literal and 1 for metaphor |
 | genre                   | source text genre         | news, fiction, academic, conversation (conversation only in VUA) |
-| sent_txt_tokenized      | orignial tokenization     |                                          |
+| sent_txt_tokenized      | orignial tokenization     | sentence to a list of words              |
 | sent_bert_tokens        | bert tokenization         |                                          |
-| sent_txt_tokenized_bert | bert tokenization in the style of  original tokenization |           |
+| sent_txt_tokenized_bert | bert tokenization         | sentence to a list of lists, each inner list for a Bert tokenized word     |
 | BIO_seq                 | BIO tag sequence          | trinary, B for begining of metaphor, I for inside metaphor and O for outside metaphor (i.e. literal) |
 | split                   | subset label              | trinary, train/test/val                  |
 
