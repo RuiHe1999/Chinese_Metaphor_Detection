@@ -12,11 +12,11 @@ Brief intro to each folder:
 - data: formatted version of each corpus
 
 ## Data
-We used two metaphor datasets here, VU Amsterdam Metaphor Corpus for English and PSU Chinese Metaphor Corpus for Chinese (Mandarin).
+We used two metaphor datasets here, VU Amsterdam Metaphor Corpus for English and PSU Chinese Metaphor Corpus for Chinese (Mandarin). 
 
 **Dataset format**:
 
-All Datasets are endcoded with UTF-8. The datasets we shared here are not original ones but formatted into 5 or 8 columns.
+All Datasets are endcoded with UTF-8. The datasets we shared here are not original ones but formatted into 5 or 8 columns. Below the table we provided the links to original datasets respectively. 
 
 | Column Title            | Meaning                   | Note                                     |
 | ------------            | -----------------------   | ---------------------------------------- |
@@ -53,4 +53,5 @@ This is due to a lack of </s\> in the original corpus, I added it.
 
 
 ## Embeddings
+We provided the codes for embedding sentence but the embeddings we trained on our data could not be released here (too large to be uploaded on GitHub). If needed, please contact me by [email](@mailto: h.r-rui@outlook.com).
 
