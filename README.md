@@ -71,7 +71,7 @@ We provided the codes for embedding sentence but the embeddings we trained on ou
 - Baseline: Baseline embeddings are generated with torch.nn.embeddings. THe vocabulary was generated from the dataset itself and made into a token2idx dictionary. These embeddings are trained on bert tokenized sentences. (Not used at last)
 
 ## Codes
-We provided our codes for BiLSTM+Attention and BiLSTM+Attention+CRF models on mono- and cross-lingual metaphor detection tasks. It was created and run on Google Colab. You need to change the file paths before you run these codes. 
+We provided our codes for BiLSTM+Attention and BiLSTM+Attention+CRF models on mono- and cross-lingual metaphor detection tasks. It was created and run on Google Colab. You need to change the file paths before you run these codes. We provided ipynb files as they stored both the codes themselves but also the outputs. 
 
 ## Predictions
 Here stores our result of sequencial metaphor detection. 
