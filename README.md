@@ -6,6 +6,7 @@ Data and codes for my master thesis (TFM). The core model is a BiLSTM + CRF recu
 - [folder intro](#basics)
 - [Data](#data)
 - [Embeddings](#embeddings)
+- [Predictions](#predictions)
 
 ## Basics
 Brief intro to each folder:
@@ -67,3 +68,5 @@ We provided the codes for embedding sentence but the embeddings we trained on ou
     - English: we used allennlp.modules.token_embedders.elmo_token_embedder to embed the sentence using the Elmo model published by allennlp.
     - Chinese: we used the elmo trained by HIT which is shared by henryhust. Click here to [download](https://pan.baidu.com/s/1RNKnj6hgL-2orQ7f38CauA?errno=0&errmsg=Auth%20Login%20Sucess&&bduss=&ssnerror=0&traceid=).The github repo of this project could be found on [henryhust/elmo_chinese](https://github.com/henryhust/elmo_chinese) (find an example model to train elmo on Chinese data) and [HIT-SCIR/ELMoForManyLangs](https://github.com/HIT-SCIR/ELMoForManyLangs)(the source code of elmoformanylangs published by HUST). 
 
+## Predictions
+Here stores our result of sequencial metaphor detection. 
