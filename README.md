@@ -6,6 +6,7 @@ Data and codes for my master thesis (TFM). The core model is a BiLSTM + CRF recu
 - [folder intro](#basics)
 - [Data](#data)
 - [Embeddings](#embeddings)
+- [Codes](#codes)
 - [Predictions](#predictions)
 
 ## Basics
@@ -56,17 +57,21 @@ This is due to a lack of </s\> in the original corpus, I added it.
 ## Embeddings
 We provided the codes for embedding sentence but the embeddings we trained on our data could not be released here (too large to be uploaded on GitHub). If needed, please contact me by [email](<mailto: h.r-rui@outlook.com>). The embedding ares stored in h5 files. 
 
-- BERT: We used and recommended [bert-as-service](<https://github.com/hanxiao/bert-as-service>) for Bert embeddings. It is super easy and fast to generate bert embeddings. 
-    - English: we used the [uncased BERT model published by Google](<https://storage.googleapis.com/bert_models/2018_10_18/uncased_L-12_H-768_A-12.zip>) for English data. 
-    - Chinese: we did not use the Chinese BERT model published by Google but RoBERTa-wwm-ext by HIT and iFLYTEK (an improved Bert for Chinese). Detailed information could be found on [Chinese BERT with Whole Word Masking](https://github.com/ymcui/Chinese-BERT-wwm/blob/master/README_EN.md#chinese-bert-with-whole-word-masking).
-
 - FastText: We used the official package and pretrained model published by Facebook to generate the embeddings for both English and Chinese data. These embeddings are trained on bert tokenized sentences. 
-
-- Baseline: Baseline embeddings are generated with torch.nn.embeddings. THe vocabulary was generated from the dataset itself and made into a token2idx dictionary. These embeddings are trained on bert tokenized sentences. 
 
 - Elmo: These embeddings are trained on bert tokenized sentences. 
     - English: we used allennlp.modules.token_embedders.elmo_token_embedder to embed the sentence using the Elmo model published by allennlp.
     - Chinese: we used the elmo trained by HIT which is shared by henryhust. Click here to [download](https://pan.baidu.com/s/1RNKnj6hgL-2orQ7f38CauA?errno=0&errmsg=Auth%20Login%20Sucess&&bduss=&ssnerror=0&traceid=).The github repo of this project could be found on [henryhust/elmo_chinese](https://github.com/henryhust/elmo_chinese) (find an example model to train elmo on Chinese data) and [HIT-SCIR/ELMoForManyLangs](https://github.com/HIT-SCIR/ELMoForManyLangs)(the source code of elmoformanylangs published by HUST). 
+
+- BERT: We used and recommended [bert-as-service](<https://github.com/hanxiao/bert-as-service>) for Bert embeddings. It is super easy and fast to generate bert embeddings. 
+    - English: we used the [uncased BERT model published by Google](<https://storage.googleapis.com/bert_models/2018_10_18/uncased_L-12_H-768_A-12.zip>) for English data. 
+    - Chinese: we did not use the Chinese BERT model published by Google but RoBERTa-wwm-ext by HIT and iFLYTEK (an improved Bert for Chinese). Detailed information could be found on [Chinese BERT with Whole Word Masking](https://github.com/ymcui/Chinese-BERT-wwm/blob/master/README_EN.md#chinese-bert-with-whole-word-masking). 
+(Not used at last)
+
+- Baseline: Baseline embeddings are generated with torch.nn.embeddings. THe vocabulary was generated from the dataset itself and made into a token2idx dictionary. These embeddings are trained on bert tokenized sentences. (Not used at last)
+
+## Codes
+We provided our codes for BiLSTM+Attention and BiLSTM+Attention+CRF models on mono- and cross-lingual metaphor detection tasks. It was created and run on Google Colab. You need to change the file paths before you run these codes. 
 
 ## Predictions
 Here stores our result of sequencial metaphor detection. 
